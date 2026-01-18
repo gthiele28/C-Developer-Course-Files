@@ -28,5 +28,32 @@ int main () {
 
     cout << "Hello, " << fullName << "." << endl;
 
+    /* 
+        Challenge: create 3 variables: fullName, location, initialScore
+        Prompt User for each, using getline or cin
+        Print the results using cout (format provided but im not copying it)
+    */
+
+   string fullNameAgain;
+   string location;
+   int initialScore;
+
+   cout << "Please enter your full name (again): " << endl;
+   getline(cin, fullNameAgain);
+
+   cout << "Now, please enter your location: " << endl;
+   getline(cin, location);
+
+   cout << "What is your initial score? " << endl;
+   cin >> initialScore;
+
+   cout << "Hello, " << fullNameAgain << endl;
+   cout << "We heard you are from " << location << endl;
+   cout << "Your original score is " << initialScore << ", but with five points added, your score is " << (initialScore + 5) << "." << endl;
+
+   //NOTE: Only use cin.get() to remove newline if the previous
+   //Removal wasn't getline(), as getline removes that.  If you miss
+   //The first character of an input, that's why!
+
     return 0;
 }
