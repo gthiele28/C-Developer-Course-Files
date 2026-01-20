@@ -1,3 +1,10 @@
+/* SPECS:
+    Take input plan and number of devices used,
+    Output estimated cost user will have to pay for that month
+    A list of prices, devices, etc was given but im not copying all that
+    Just assume the numbers both can be hardcoded and are acceptable
+*/
+
 #include <iostream>
 using namespace std;
 
