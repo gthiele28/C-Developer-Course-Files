@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int countEvens(int arr[], int size);
+
+int main() {
+
+    int arr[6] = {2, 7, 10, 5, 6, 1};
+    int result = countEvens(arr, 6);
+
+    cout << "The array has " << result << " even numbers." << endl;
+
+    return 0;
+}
+
+int countEvens(int arr[], int size) {
+    int count = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {
+            count++;
+        }
+    }
+    return count;
+}
