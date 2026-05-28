@@ -16,4 +16,10 @@ int main () {
         cout << "\tsize: " << exhibitPtrs[i]->getDisplaySize() << endl;
         cout << endl;
     }
+
+    //free up memory
+    for (int i = 0; i < ARR_SIZE; i++) {
+        delete exhibitPtrs[i];
+        exhibitPtrs[i] = nullptr;
+    }
 }
