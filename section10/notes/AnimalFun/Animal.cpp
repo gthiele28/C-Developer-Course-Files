@@ -22,6 +22,6 @@ double Animal::getWeight() const {
 void Animal::setWeight(double newWeight) {
     weight = newWeight;
 }
-string Animal::makeNoise() {
+string Animal::makeNoise() const {
     return "unknown";
 }
