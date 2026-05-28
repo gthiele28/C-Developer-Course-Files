@@ -10,7 +10,7 @@ class Dog : public Animal {
         Dog(string name, double weight, string breed);
         string getBreed() const;
         void digHole() const;
-        string makeNoise() const;
+        string makeNoise() const override;
         void chaseCat() const;
 
     private:
